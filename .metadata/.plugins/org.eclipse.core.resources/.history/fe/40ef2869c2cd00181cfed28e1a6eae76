@@ -1,0 +1,31 @@
+package dwrightmod4csc_201;
+
+import java.util.Scanner;
+
+public class RainfallDriver {
+
+	public static void main(String[] args) {
+		int temp = 0;
+		
+		double[] thisYear = {1.6, 2.1, 1.7, 3.5, 2.6, 3.7,  3.9, 2.6, 2.9, 4.3, 2.4, 3.7 };
+		String[] months = {"January", "February", "March", "April", "May", "June",
+	    		  "July", "August", "September", "October", "November", "December"};
+		
+		Scanner scan = new Scanner(System.in);
+		
+		
+		
+		Rainfall year = new Rainfall(thisYear);
+		
+		System.out.println("The total rainfall for this year is " + year.getTotalRainfall());
+		System.out.println("The average rainfall for this year is " + year.getAverageRainFall());
+		System.out.println("The month with the highest amount of rainfall is " + months[year.getHighestMonth()] 
+				+ " with " + thisYear[year.getHighestMonth()]);
+		System.out.println("The month with the lowest amount of rainfall is " + months[year.getLowestMonth()] 
+				+ " with " + thisYear[year.getLowestMonth()]);
+		
+		
+
+	}
+
+}

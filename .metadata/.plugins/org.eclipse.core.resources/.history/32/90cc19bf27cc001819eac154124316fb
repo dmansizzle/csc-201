@@ -1,0 +1,36 @@
+package dwrightmod4quiz10_9;
+
+import java.util.ArrayList;
+
+public class DogDriver {
+
+	public static void main(String[] args) {
+		
+		Dog fido = new Dog("Fido", "Mutt");
+		Dog rover = new Dog("Rover", "Spaniel");
+		Dog minnie = new Dog("Minnie", "Pooch");
+		Dog sam = new Dog("Sam", "Beagle");
+		Dog harvey = new Dog("Harvey", "Poodle");
+		ArrayList<Dog> dog = new ArrayList<Dog>();
+		dog.add(fido);
+		dog.add(rover);
+		dog.add(minnie);
+		dog.add(sam);
+		dog.add(harvey);
+		
+		
+		
+		
+		
+		DogDriver.print(dog);
+
+	}
+	public static void print(ArrayList<Dog> doggo) {
+		
+		System.out.println("Your dogs are:");
+		for(int i = 0;i<doggo.size();i++) {
+			System.out.println(doggo.get(i));
+		}
+	}
+
+}

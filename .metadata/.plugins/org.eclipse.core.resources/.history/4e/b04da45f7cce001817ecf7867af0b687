@@ -1,0 +1,31 @@
+package dwrightmod4csc_201;
+
+public class MergeArray {
+
+	public static void main(String[] args) {
+
+		int[] a = {3,6,10,14,21};
+		   int[] b = {24,15,13,12,5,2,1};
+		   int[] c = mergeArray(a,b);
+		   printResult(c);   
+	}
+
+	public static int[] mergeArray(int[] first, int[] second) {
+
+		int[] result = {};
+		int[] a = first;
+		int[] b = second;
+		
+		
+		
+		
+		return result;
+		
+	}
+
+	public static void printResult(int[] c) {
+
+		
+		
+	}
+}

@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+/home/danman/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+293358797.index
+1848207174.index
+1719368795.index
+4162841080.index

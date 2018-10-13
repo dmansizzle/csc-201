@@ -1,0 +1,23 @@
+package dwrightmod4csc_201;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
+public class TicketDriver {
+
+	public static void main(String[] args) {
+		int tickets[][] = {{30,40,50,50,50,50,50,50,40,40}, {20,30,30,40,50,50,40,30,30,20}, {20,20,30,30,40,40,30,30,20,10}, {10,10,20,20,20,20,20,20,10,10}, {10,10,20,20,20,20,20,20,10,10}, {10,10,10,10,10,10,10,10,10,10}, {10,10,10,10,10,10,10,10,10,10}, {10,10,10,10,10,10,10,10,10,10}};
+		NumberFormat mon = DecimalFormat.getCurrencyInstance();
+
+		System.out.println("The total value of all the tickest is " + mon.format(Ticket.getTotal(tickets)));
+		System.out.println("The total number of seats in the theatre is " + Ticket.getElementCount(tickets));
+		System.out.println("The average cost of a ticket is " + mon.format(Ticket.getAverage(tickets)));
+		
+		for(int i = 0; i< 9 ;i++) {
+			System.out.println("The average cost of a ticket on row " + i + " is " + mon.format(Ticket.getRowAverage(tickets, i)));
+		}
+		
+		
+	}
+
+}

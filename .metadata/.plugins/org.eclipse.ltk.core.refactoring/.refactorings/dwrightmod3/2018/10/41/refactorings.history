@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Game.java&apos; to &apos;dwrightmod4/dwrightmod4csc_201&apos;&#x0A;- Original project: &apos;dwrightmod3&apos;&#x0A;- Destination element: &apos;dwrightmod4/dwrightmod4csc_201&apos;&#x0A;- Original element: &apos;dwrightmod3_csc201_F18.Game.java&apos;" description="Copy compilation unit" destination="=dwrightmod4/&lt;dwrightmod4csc_201" element1="/&lt;dwrightmod3_csc201_F18{Game.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1539389496626" units="1" version="1.0"/>
+</session>

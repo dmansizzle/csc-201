@@ -1,0 +1,25 @@
+package dwrightmod4quiz10_9;
+
+import java.util.ArrayList;
+
+public class DogDriver {
+
+	public static void main(String[] args) {
+		
+		Dog doggie = new Dog("Fido", "Mutt");
+		
+		ArrayList<Dog> dog = new ArrayList<Dog>();
+		dog.add(doggie);
+		
+		doggie.setName("Rover");
+		doggie.setBreed("Spaniel");
+		dog.add(doggie);
+		
+		DogDriver.print(dog);
+
+	}
+	public static void print(ArrayList<Dog> doggo) {
+		System.out.println(doggo.get(0));
+	}
+
+}

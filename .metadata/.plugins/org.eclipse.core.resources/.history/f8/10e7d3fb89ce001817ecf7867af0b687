@@ -1,0 +1,49 @@
+package dwrightmod4csc_201;
+
+public class MergeArray {
+
+	public static void main(String[] args) {
+
+		int[] a = { 3, 6, 10, 14, 21 };
+		int[] b = { 24, 15, 13, 12, 5, 2, 1 };
+		int[] c = mergeArray(a, b);
+		printResult(c);
+	}
+
+	public static int[] mergeArray(int[] first, int[] second) {
+
+		int[] result = {};
+		int[] a = first;
+		int[] b = second;
+		int i=0,j=0,k=0;
+		int total = a.length + b.length;
+
+		while (i<a.length && j<b.length) {
+			if(a[i] < b[i]) {
+				result[k++] = a[i++];
+			}
+			else {
+				result[k++] = b[j++];
+			}	
+		}
+		while (i < a.length) {
+			result[k++] = a[i++];
+		}
+		while (j < b.length) {
+			result[k++] = b[j++];
+		}
+
+		return result;
+
+	}
+
+	public static void printResult(int[] c) {
+
+		int[] print = c;
+		
+		for(int i = 0; i < print.length; i++) {
+			System.out.print(print[i] + " ");
+		}
+		
+	}
+}
